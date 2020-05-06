@@ -13,6 +13,7 @@ function preload() {
 
 function setup() {
   // leave setup here, do not delete!
+  noCanvas()
 }
 inputImage.addEventListener("change", (e) => {
   urlImg = URL.createObjectURL(event.target.files[0]);
@@ -82,6 +83,7 @@ const handleSubmit = async (filteredResult) => {
             <h5>${e.type}</h5>
             <p>${e.description}</p>
         </div>
+
         </div>
 `);
 

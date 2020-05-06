@@ -17,7 +17,7 @@
                     <div class="intro-card-main">
                         <img src="" alt="">
                         <h1>STEP 2</h1>
-                        <h5>Pick your prefered e<x>ercises and add them to your routines</h5>
+                        <h5>Pick your prefered exercises and add them to your routines</h5>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
     {{#if isUserLoggedIn}}
     <section class="bottom" id="bottom">
-
+<div class="bottom-cont">
         <div class="inputsPhoto">
             <h4>Upload a photo !</h4>
             <input type="file" id="img" name="photo" placeholder="">
@@ -65,12 +65,13 @@
                 <option value="Arms">Arms</option>
             </select>
         </div>
-        <div class="allexers">
-            
+
+        {{/if}}
         </div>
     </section>
-    {{/if}}
+    <section class="each-ex">
 
+    </section>
 </main>
 <script>
     function myFunction() {

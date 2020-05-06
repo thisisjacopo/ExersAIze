@@ -1,16 +1,15 @@
 let cat, plant, sofa, table;
 let start;
 
-function preload() {
-  
-  // Load model with normalise parameter set to true
-  cat = loadModel('/resources/cat.obj', true);
-    plant = loadModel('/resources/plant2.obj', true);
-  sofa = loadModel('/resources/sofa.obj', true);
-  table = loadModel('/resources/table.obj', true);
 
+function preload() {
+  // Load model with normalise parameter set to true
+  cat = loadModel("/resources/cat.obj", true);
+  plant = loadModel("/resources/plant2.obj", true);
+  sofa = loadModel("/resources/sofa.obj", true);
+  table = loadModel("/resources/table.obj", true);
+  
 }
-loading();
 
 function setup() {
   let cv = createCanvas(windowWidth, windowHeight, WEBGL);

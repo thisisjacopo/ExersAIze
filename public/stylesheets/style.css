@@ -7,7 +7,6 @@
 html,
 body {
   scroll-behavior: smooth;
-  
 }
 
 * {
@@ -15,7 +14,7 @@ body {
   padding: 0px;
   color: #fd978a;
   background-color: #222222;
-  background-image: url('/resources/bkgrnd.png');
+  background-image: url("/resources/bkgrnd.png");
 }
 
 /*navbar FALTA MOBILE FIRST*/
@@ -57,11 +56,9 @@ li {
   font-size: 0.7em;
 }
 
-.section *{
+.section * {
   background: none;
 }
-
-
 
 ul li a:hover {
   border-bottom: 2px solid #fd978a;
@@ -117,7 +114,6 @@ p {
   align-items: center;
   justify-content: space-around;
   padding: 0 35px;
- 
 }
 
 .name-use {
@@ -388,10 +384,12 @@ html.is-animating .transition-fade {
   background: rgb(240, 240, 240);
 }
 
+/* //PROFILE START */
+
 .personalSection {
   display: flex;
   flex-direction: column;
-  /* margin-top: 50px; */
+  align-items: end;
 }
 
 .personalHeader {
@@ -402,8 +400,10 @@ html.is-animating .transition-fade {
   justify-content: center;
   align-items: center;
   margin-left: 3%;
-  border-right: #fd978a solid 2px;
+  border-right: #f32b11 solid 2px;
   height: 70%;
+  margin-top: 4rem;
+  border-bottom: none;
 }
 
 .profile-avatar {
@@ -419,7 +419,7 @@ html.is-animating .transition-fade {
   padding: 10px;
   margin: 5px auto;
   font-family: Fira Code;
-  color: #fd978a;
+  color: #f32b11;
 }
 
 .routines-profile {
@@ -427,11 +427,84 @@ html.is-animating .transition-fade {
   flex-flow: column;
   justify-content: right;
   align-items: flex-end;
-  width: 70%;
+  width: 82%;
+  margin-top: 5rem;
+}
+
+.eachRoutine {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #f32b11;
+  color: #f32b11;
+  align-items: flex-start;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+
+
+.eachRoutine * {
+  padding: 3px;
+  color: #f32b11;
+}
+
+.delete-routine-btn {
+  border: 1px solid #f32b11;
+  background: #f32b11;
+  border-radius: 50%;
+  margin-left: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+#add-routine-btn {
+  width: 25%;
+  height: 4rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  border: 1px solid #f32b11;
+  color: #f32b11;
+}
+
+#newRoutine {
+  width: 30%;
+  padding-right: 5%;
+}
+
+.add-btn {
+  width: 55%;
+  margin-top: 1.5rem;
+  margin-left: 50%;
+  height: 2.5rem;
+  border: 1px solid #f32b11;
+}
+
+#routineName {
+  width: 150%;
+  height: 3rem;
+  border: none;
+  border-bottom: 1px solid #f32b11;
+  float: none;
+  color: #f32b11;
+}
+
+#personal-edit {
+  border: 1px solid #f32b11;
+  margin-top: 1.5rem;
 }
 
 .images-profile p {
-  color: #fd978a;
+  color: #f32b11;
 }
 
 /* edit profile */
@@ -445,26 +518,28 @@ html.is-animating .transition-fade {
   align-items: center;
   margin-top: 5rem;
   margin-left: 30%;
-  border-left: #fd978a 2px solid;
-  border-right: rgb(241, 194, 40) 2px solid;
+  border-left: #f32b11 2px solid;
+  border-right: #f32b11 2px solid;
   align-self: auto;
 }
 
 .personalHeader2 button {
-  color: #fd978a;
+  color: #f32b11;
   margin-top: 1rem;
 }
 
 .image-input-btn {
-  color: #fd978a;
+  color: #f32b11;
   height: 2rem;
 }
 .personalHeader2 * {
   padding: 7px;
   margin: 6px auto;
   font-family: Fira Code;
-  color: #fd978a;
+  color: #f32b11;
 }
+
+/* PROFILE END */
 
 .box {
   position: relative;
@@ -591,21 +666,23 @@ html.is-animating .transition-fade {
   color: #fd978a;
 }
 
-.allExerciseCards {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .exercise-card {
   margin-top: 20px;
   margin-left: 3%;
-  width: 30%;
-  min-height: 500px;
+  height: 35rem;
   border: 2px solid #fd978a;
   border-radius: 5%;
-  
+  display: flow-root;
+  width: 20%;
+}
+
+select.ex-move-btn {
+  width: 50%;
+}
+
+.each-ex {
+  display: flex;
+  align-content: space-evenly;
 }
 
 .exercise-card h5 {
@@ -673,11 +750,9 @@ html.is-animating .transition-fade {
   margin-top: 3rem;
 }
 
-.ex-card-main h2{
+.ex-card-main h2 {
   font-size: 30px;
   border-bottom: #fd978a solid 2px;
-
-
 }
 
 /* HOMEPAGE DESC CARDS */
@@ -685,7 +760,6 @@ html.is-animating .transition-fade {
 .intro-card {
   display: block;
   flex-wrap: wrap;
-  margin-top: 3rem;
   margin: 2% 1%;
   width: 31%;
   height: 500px;
@@ -728,18 +802,23 @@ html.is-animating .transition-fade {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .top {
+  margin-top: 3rem;
   min-height: 100vh;
   width: 95%;
 }
 
 .bottom {
-  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.cards-container {
+  display: flex;
 }
 
 .getReady {
@@ -766,24 +845,10 @@ html.is-animating .transition-fade {
   padding: 10px;
 }
 
-.eachRoutine {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  width: 200px;
-  justify-content: space-around;
-}
-
-.eachRoutine * {
-  padding: 3px;
-}
-
-
 .loading {
-  
   width: 120px;
   height: 120px;
-  background: linear-gradient(-45deg, #ED1C24, #FCEE21);
+  background: linear-gradient(-45deg, #ed1c24, #fcee21);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -794,7 +859,7 @@ html.is-animating .transition-fade {
 @keyframes rotation {
   0% {
     border-radius: 5% 5% 5% 5%;
-    transform: translate(-50%, -50%) rotate(0deg)
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   12.5% {
     border-radius: 50% 5% 5% 5%;
@@ -830,7 +895,7 @@ html.is-animating .transition-fade {
   }
 }
 
-.allexers{
+.allexers {
   display: flex;
   flex-direction: row;
 }

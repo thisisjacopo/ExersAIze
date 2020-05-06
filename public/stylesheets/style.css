@@ -4,7 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
 
-html, body{
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -16,7 +17,6 @@ html, body{
 }
 
 /*navbar FALTA MOBILE FIRST*/
-
 
 .navbar {
   border-bottom: #fd978a 2px solid;
@@ -85,12 +85,9 @@ ul li a:hover {
   transform: translate(-50%, -50%);
   color: white;
   z-index: 21;
-  
 }
 
-
-
- p{
+p {
   position: relative;
   top: 4.7em;
   background: none;
@@ -667,7 +664,7 @@ html.is-animating .transition-fade {
 
 /* HOMEPAGE DESC CARDS */
 
-.intro-card{
+.intro-card {
   display: block;
   flex-wrap: wrap;
   margin-top: 3rem;
@@ -678,7 +675,7 @@ html.is-animating .transition-fade {
   /* margin-top: 4rem; */
 }
 
-.intro-card-content{
+.intro-card-content {
   justify-content: space-around;
   margin: 2% 2% 2% 2%;
 }
@@ -709,28 +706,28 @@ html.is-animating .transition-fade {
   font-size: 1rem;
 }
 
-.instructions-main{
+.instructions-main {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.top{
+.top {
   min-height: 100vh;
   width: 95%;
 }
 
-.bottom{
+.bottom {
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.getReady{
+.getReady {
   display: flex;
   justify-content: center;
- 
+
   margin: auto auto;
 }
 
@@ -739,20 +736,19 @@ html.is-animating .transition-fade {
   height: 60px;
 }
 
-.inputsPhoto, .inputsEx{
+.inputsPhoto,
+.inputsEx {
   display: flex;
   flex-direction: column;
   width: 30%;
   margin: 50px auto;
-
 }
-.inputsPhoto *{
+.inputsPhoto * {
   margin: 10px;
   padding: 10px;
-  
 }
 
-.eachRoutine{
+.eachRoutine {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -760,7 +756,7 @@ html.is-animating .transition-fade {
   justify-content: space-around;
 }
 
-.eachRoutine *{
+.eachRoutine * {
   padding: 3px;
 }
 

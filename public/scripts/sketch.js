@@ -13,6 +13,7 @@ function preload() {
 
 function setup() {
   // leave setup here, do not delete!
+  noCanvas()
 }
 inputImage.addEventListener("change", (e) => {
   urlImg = URL.createObjectURL(event.target.files[0]);
@@ -82,20 +83,20 @@ const handleSubmit = async (filteredResult) => {
             <h5>${e.type}</h5>
             <p>${e.description}</p>
         </div>
-        </div>
-`);
+    
+</div>`)
+const exContainer = document.querySelector(".each-ex");
+console.log(eachEx);
+exContainer.appendChild(eachEx.elt);
 
-    const exContainer = document.querySelector(".each-ex");
-    console.log(eachEx);
-
-    exContainer.appendChild(eachEx.elt);
-
-    const selectedElement = eachEx.elt.querySelector(".ex-move-btn");
-    const removeElement = eachEx.elt.querySelector(".ex-delete-btn");
-    removeElement.addEventListener("click", (e) => {
-      eachEx.elt.remove();
-    });
-    selectedElement.addEventListener("change", (e) => {
+      // document.getElementById('allexers').appendChild(eachEx)
+  //  eachEx.parent('.allexers')
+    const selectedElement = eachEx.elt.querySelector('.ex-move-btn')
+    const removeElement = eachEx.elt.querySelector('.ex-delete-btn')
+    removeElement.addEventListener('click', (e) => {
+      eachEx.elt.remove()
+    })
+    selectedElement.addEventListener('change', (e) => {
       //location = e.target.value
       eachEx.elt.remove();
       fetch(e.target.value).then((response) => {

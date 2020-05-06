@@ -3,27 +3,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
+<<<<<<< HEAD
 
 html,
 body {
+=======
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap');
+html, body{
+>>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
   scroll-behavior: smooth;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  color: #fd978a;
+
+  color: #f32b11;
   background-color: #222222;
+<<<<<<< HEAD
   background-image: url("/resources/bkgrnd.png");
+=======
+  background-image: url('/resources/bkgrnd.png');
+  font-family: Raleway;
+>>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
 }
 
 /*navbar FALTA MOBILE FIRST*/
 
 .navbar {
-  border-bottom: #fd978a 2px solid;
+  border-bottom:  #ff5100 1px solid;
   width: 95%;
   margin-left: 2.5%;
   height: 5%;
+
 }
 
 .menu {
@@ -37,11 +49,11 @@ body {
   z-index: 3 !important;
 }
 
-ul li a {
+ li a {
   /* transform: rotate(180deg); */
   font-family: Fira Code;
   font-size: 1rem;
-  color: #fd978a;
+  color: #f32b11;
   font-weight: bold;
   letter-spacing: 4px;
   margin: 2rem;
@@ -61,7 +73,7 @@ li {
 }
 
 ul li a:hover {
-  border-bottom: 2px solid #fd978a;
+  border-bottom: 2px solid  #ff5100;
 }
 
 .profile {
@@ -72,8 +84,14 @@ ul li a:hover {
   border-bottom: 2px solid rgb(241, 194, 40);
 }
 
-/* home */
+.logoHome{
+  justify-self: flex-start;
+  font-family: Manrope;
+  color: #f87117;
+}
 
+
+/* home */
 .threeDp {
   font-weight: 100;
   font-family: Fira Code;
@@ -82,7 +100,7 @@ ul li a:hover {
   line-height: 1.7em;
   letter-spacing: 0.5px;
   font-size: 15px;
-  top: calc(100vh - 200px);
+  top: calc(100vh - 300px);
   justify-content: center;
   text-align: center;
   margin-top: 60px;
@@ -92,7 +110,34 @@ ul li a:hover {
   z-index: 21;
 }
 
+<<<<<<< HEAD
 p {
+=======
+.threeDp2 {
+  font-weight: 900;
+  font-family: Raleway;
+  width: 55%;
+  font-size: 8em;
+  position: absolute;
+  letter-spacing: 1px;
+  top: calc(100vh - 500px);
+  justify-content: center;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 21;
+  background: none;
+}
+
+.ai {
+color: #928e8c;
+background: none;
+}
+
+
+ p{
+>>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
   position: relative;
   margin-top: 10px;
   background: none;
@@ -113,7 +158,12 @@ p {
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
+<<<<<<< HEAD
   padding: 0 35px;
+=======
+  padding: 0px;
+ 
+>>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
 }
 
 .name-use {
@@ -222,7 +272,7 @@ li {
 .overlay {
   position: absolute;
   width: 100%;
-  height: 10000%;
+  height: 1000%;
   top: 0;
   z-index: 10;
   left: 0;
@@ -384,7 +434,8 @@ html.is-animating .transition-fade {
   background: rgb(240, 240, 240);
 }
 
-/* //PROFILE START */
+
+
 
 .personalSection {
   display: flex;
@@ -447,7 +498,6 @@ html.is-animating .transition-fade {
 }
 
 
-
 .eachRoutine * {
   padding: 3px;
   color: #f32b11;
@@ -481,6 +531,7 @@ html.is-animating .transition-fade {
   padding-right: 5%;
 }
 
+
 .add-btn {
   width: 55%;
   margin-top: 1.5rem;
@@ -488,6 +539,7 @@ html.is-animating .transition-fade {
   height: 2.5rem;
   border: 1px solid #f32b11;
 }
+
 
 #routineName {
   width: 150%;
@@ -498,15 +550,16 @@ html.is-animating .transition-fade {
   color: #f32b11;
 }
 
+
 #personal-edit {
   border: 1px solid #f32b11;
   margin-top: 1.5rem;
 }
 
+
 .images-profile p {
   color: #f32b11;
 }
-
 /* edit profile */
 
 .personalHeader2 {
@@ -522,7 +575,6 @@ html.is-animating .transition-fade {
   border-right: #f32b11 2px solid;
   align-self: auto;
 }
-
 .personalHeader2 button {
   color: #f32b11;
   margin-top: 1rem;
@@ -532,6 +584,7 @@ html.is-animating .transition-fade {
   color: #f32b11;
   height: 2rem;
 }
+
 .personalHeader2 * {
   padding: 7px;
   margin: 6px auto;
@@ -539,7 +592,8 @@ html.is-animating .transition-fade {
   color: #f32b11;
 }
 
-/* PROFILE END */
+/* Profile End */
+
 
 .box {
   position: relative;
@@ -570,12 +624,11 @@ html.is-animating .transition-fade {
   width: 150px;
 }
 
-#notLogged {
-  display: none;
-  position: absolute;
-  right: 17%;
-  top: 610px;
-  font-family: Fira Code;
+#notLog {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 
 .succededDiv {
@@ -608,28 +661,15 @@ html.is-animating .transition-fade {
 
 /* about */
 
-.ruido {
-  height: 100vh;
-  width: 100vw;
-  opacity: 0.1;
-  z-index: 21;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .about-text {
   width: 60%;
-  position: absolute;
-  top: 53%;
-  justify-content: center;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .about-text p {
-  font-weight: bold;
   font-family: Manrope;
   line-height: 1.6em;
   letter-spacing: 0.6px;
@@ -650,6 +690,10 @@ html.is-animating .transition-fade {
   z-index: -1;
 }
 
+.titleAbout {
+  
+}
+
 /* -------EXERCCISE CARD CONTAINERS */
 
 .routineHeader {
@@ -663,26 +707,19 @@ html.is-animating .transition-fade {
 .routineHeader h1 {
   font-size: 3rem;
   margin-bottom: 5rem;
-  color: #fd978a;
+  color: #333333;
 }
 
 .exercise-card {
   margin-top: 20px;
-  margin-left: 3%;
-  height: 35rem;
+  /* margin-left: %; */
+  width: 300px;
+  min-height: 700px;
   border: 2px solid #fd978a;
-  border-radius: 5%;
-  display: flow-root;
-  width: 20%;
-}
+  margin: auto 5px;
 
-select.ex-move-btn {
-  width: 50%;
-}
-
-.each-ex {
-  display: flex;
-  align-content: space-evenly;
+  /* border-radius: 5%; */
+  
 }
 
 .exercise-card h5 {
@@ -760,16 +797,25 @@ select.ex-move-btn {
 .intro-card {
   display: block;
   flex-wrap: wrap;
-  margin: 2% 1%;
+  margin-top: 3rem;
+  margin: 2% 2%;
   width: 31%;
   height: 500px;
-  border: 2px solid #fd978a;
-  /* margin-top: 4rem; */
+  /* border-radius: 5%; */
+  background-image: url('/resources/div2.jpg');
 }
+.intro-card *{
+  background: none;
+  color: #333333;
 
-.intro-card-content {
+}
+.intro-card-content{
   justify-content: space-around;
   margin: 2% 2% 2% 2%;
+}
+
+.instruction-image{
+  width: 220px;
 }
 
 .intro-card-main {
@@ -782,33 +828,38 @@ select.ex-move-btn {
 }
 
 .intro-card h5 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   letter-spacing: 1.5px;
-  color: #fd978a;
+  color: #333333;
+  font-weight: 500;
 }
 .intro-card h1 {
-  color: #fd978a;
+  color: #333333;
   font-size: 2rem;
   letter-spacing: 3px;
 }
 
 .intro-card p {
-  color: #fd978a;
+  color: #333333;
   font-size: 1rem;
 }
 
-.instructions-main {
+.intro-card *{
+  font-family: Raleway;
+}
+.instructions-main{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2 em;
 }
 
-.top {
-  margin-top: 3rem;
-  min-height: 100vh;
+.top{
+  min-height: 95vh;
   width: 95%;
+  border-bottom: 2px solid #fd978a;
+  ;
 }
 
 .bottom {
@@ -837,8 +888,10 @@ select.ex-move-btn {
 .inputsEx {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
   margin: 50px auto;
+  text-align: center;
+
 }
 .inputsPhoto * {
   margin: 10px;
@@ -895,7 +948,7 @@ select.ex-move-btn {
   }
 }
 
-.allexers {
+.each-ex{
   display: flex;
   flex-direction: row;
 }

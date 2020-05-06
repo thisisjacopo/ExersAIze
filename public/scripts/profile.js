@@ -30,10 +30,11 @@ addBtn.addEventListener("click", async () => {
     newRoutineDiv.classList.add("eachRoutine");
     newRoutineDiv.innerHTML = `
         <a href="/personal/routine/${routineFromDb._id}">${routineFromDb.name}</a>
-         <a class='delete-routine-btn' href="/personal/${routineFromDb.name}/delete">X</a>`;
-    const routineParent = document.querySelector(".routines-profile");
-    routineParent.appendChild(newRoutineDiv);
-  } catch (error) {
-    console.log(error);
-  }
-});
+         <a class="delete-routine-btn" href="/personal/${routineFromDb.name}/delete">X</a>
+         </div>`
+        const routineParent = document.querySelector('.routines-profile')
+        routineParent.appendChild(newRoutineDiv)
+    } catch (error) {
+        console.log(error)
+    }
+})

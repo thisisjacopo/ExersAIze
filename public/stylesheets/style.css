@@ -3,14 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
-<<<<<<< HEAD
-
-html,
-body {
-=======
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap');
 html, body{
->>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
   scroll-behavior: smooth;
 }
 
@@ -20,12 +14,8 @@ html, body{
 
   color: #f32b11;
   background-color: #222222;
-<<<<<<< HEAD
-  background-image: url("/resources/bkgrnd.png");
-=======
   background-image: url('/resources/bkgrnd.png');
   font-family: Raleway;
->>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
 }
 
 /*navbar FALTA MOBILE FIRST*/
@@ -110,9 +100,6 @@ ul li a:hover {
   z-index: 21;
 }
 
-<<<<<<< HEAD
-p {
-=======
 .threeDp2 {
   font-weight: 900;
   font-family: Raleway;
@@ -137,7 +124,6 @@ background: none;
 
 
  p{
->>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
   position: relative;
   margin-top: 10px;
   background: none;
@@ -158,12 +144,8 @@ background: none;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
-<<<<<<< HEAD
-  padding: 0 35px;
-=======
   padding: 0px;
  
->>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
 }
 
 .name-use {

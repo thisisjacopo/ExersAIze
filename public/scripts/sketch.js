@@ -83,6 +83,7 @@ const handleSubmit = async (filteredResult) => {
             <h5>${e.type}</h5>
             <p>${e.description}</p>
         </div>
+<<<<<<< HEAD
     
 </div>`)
 const exContainer = document.querySelector(".each-ex");
@@ -97,6 +98,23 @@ exContainer.appendChild(eachEx.elt);
       eachEx.elt.remove()
     })
     selectedElement.addEventListener('change', (e) => {
+=======
+
+        </div>
+`);
+
+    const exContainer = document.querySelector(".each-ex");
+    console.log(eachEx);
+
+    exContainer.appendChild(eachEx.elt);
+
+    const selectedElement = eachEx.elt.querySelector(".ex-move-btn");
+    const removeElement = eachEx.elt.querySelector(".ex-delete-btn");
+    removeElement.addEventListener("click", (e) => {
+      eachEx.elt.remove();
+    });
+    selectedElement.addEventListener("change", (e) => {
+>>>>>>> origin
       //location = e.target.value
       eachEx.elt.remove();
       fetch(e.target.value).then((response) => {

@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 html,
 body {
@@ -11,21 +12,30 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap');
 html, body{
 >>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
+=======
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap');
+html, body{
+>>>>>>> origin
   scroll-behavior: smooth;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-
   color: #f32b11;
   background-color: #222222;
+<<<<<<< HEAD
 <<<<<<< HEAD
   background-image: url("/resources/bkgrnd.png");
 =======
   background-image: url('/resources/bkgrnd.png');
   font-family: Raleway;
 >>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
+=======
+  background-image: url('/resources/bkgrnd.png');
+  font-family: Raleway;
+
+>>>>>>> origin
 }
 
 /*navbar FALTA MOBILE FIRST*/
@@ -111,8 +121,12 @@ ul li a:hover {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 p {
 =======
+=======
+
+>>>>>>> origin
 .threeDp2 {
   font-weight: 900;
   font-family: Raleway;
@@ -137,7 +151,11 @@ background: none;
 
 
  p{
+<<<<<<< HEAD
 >>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
+=======
+
+>>>>>>> origin
   position: relative;
   margin-top: 10px;
   background: none;
@@ -712,14 +730,23 @@ html.is-animating .transition-fade {
 
 .exercise-card {
   margin-top: 20px;
+<<<<<<< HEAD
   /* margin-left: %; */
   width: 300px;
+=======
+  margin-left: 3%;
+  width: 250px;
+>>>>>>> origin
   min-height: 700px;
   border: 2px solid #fd978a;
   margin: auto 5px;
 
   /* border-radius: 5%; */
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
 }
 
 .exercise-card h5 {
@@ -808,8 +835,14 @@ html.is-animating .transition-fade {
   background: none;
   color: #333333;
 
+<<<<<<< HEAD
 }
 .intro-card-content{
+=======
+
+.intro-card-content {
+
+>>>>>>> origin
   justify-content: space-around;
   margin: 2% 2% 2% 2%;
 }
@@ -845,6 +878,10 @@ html.is-animating .transition-fade {
   font-size: 1rem;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
 .intro-card *{
   font-family: Raleway;
 }
@@ -892,6 +929,10 @@ html.is-animating .transition-fade {
   margin: 50px auto;
   text-align: center;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
 }
 .inputsPhoto * {
   margin: 10px;
@@ -949,6 +990,10 @@ html.is-animating .transition-fade {
 }
 
 .each-ex{
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
   display: flex;
   flex-direction: row;
 }

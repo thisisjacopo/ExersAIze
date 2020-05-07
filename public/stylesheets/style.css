@@ -733,20 +733,13 @@ html.is-animating .transition-fade {
 <<<<<<< HEAD
   /* margin-left: %; */
   width: 300px;
-=======
   margin-left: 3%;
   width: 250px;
 >>>>>>> origin
   min-height: 700px;
   border: 2px solid #fd978a;
   margin: auto 5px;
-
   /* border-radius: 5%; */
-  
-<<<<<<< HEAD
-=======
-
->>>>>>> origin
 }
 
 .exercise-card h5 {

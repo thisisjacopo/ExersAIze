@@ -53,15 +53,17 @@ li a {
   transition: width 0.8s ease 0.3s, font-size 0.8s ease 0.3s;
 }
 
+
 .ruido {
+ 
   z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0.1;
-  max-width: 100vw;
   max-height: 100vh;
 }
+
 
 li {
   z-index: 3;
@@ -580,7 +582,7 @@ html.is-animating .transition-fade {
   width: 300px;
   min-height: 500px;
   margin: auto 5px;
-  background-image: url('/resources/div2.jpg');
+  background-image: url('/resources/div3.jpg');
   background-size: cover;
   margin-bottom: 2%;
 }

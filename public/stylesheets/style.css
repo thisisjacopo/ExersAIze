@@ -3,19 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 html,
 body {
-=======
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap');
-html, body{
->>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
-=======
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap');
-html, body{
->>>>>>> origin
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap");
+
   scroll-behavior: smooth;
 }
 
@@ -24,28 +16,17 @@ html, body{
   padding: 0px;
   color: #f32b11;
   background-color: #222222;
-<<<<<<< HEAD
-<<<<<<< HEAD
   background-image: url("/resources/bkgrnd.png");
-=======
-  background-image: url('/resources/bkgrnd.png');
   font-family: Raleway;
->>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
-=======
-  background-image: url('/resources/bkgrnd.png');
-  font-family: Raleway;
-
->>>>>>> origin
 }
 
 /*navbar FALTA MOBILE FIRST*/
 
 .navbar {
-  border-bottom:  #ff5100 1px solid;
+  border-bottom: #ff5100 1px solid;
   width: 95%;
   margin-left: 2.5%;
   height: 5%;
-
 }
 
 .menu {
@@ -59,7 +40,7 @@ html, body{
   z-index: 3 !important;
 }
 
- li a {
+li a {
   /* transform: rotate(180deg); */
   font-family: Fira Code;
   font-size: 1rem;
@@ -83,7 +64,7 @@ li {
 }
 
 ul li a:hover {
-  border-bottom: 2px solid  #ff5100;
+  border-bottom: 2px solid #ff5100;
 }
 
 .profile {
@@ -94,12 +75,11 @@ ul li a:hover {
   border-bottom: 2px solid rgb(241, 194, 40);
 }
 
-.logoHome{
+.logoHome {
   justify-self: flex-start;
   font-family: Manrope;
   color: #f87117;
 }
-
 
 /* home */
 .threeDp {
@@ -120,13 +100,6 @@ ul li a:hover {
   z-index: 21;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-p {
-=======
-=======
-
->>>>>>> origin
 .threeDp2 {
   font-weight: 900;
   font-family: Raleway;
@@ -145,17 +118,11 @@ p {
 }
 
 .ai {
-color: #928e8c;
-background: none;
+  color: #928e8c;
+  background: none;
 }
 
-
- p{
-<<<<<<< HEAD
->>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
-=======
-
->>>>>>> origin
+p {
   position: relative;
   margin-top: 10px;
   background: none;
@@ -176,12 +143,10 @@ background: none;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
-<<<<<<< HEAD
+
   padding: 0 35px;
-=======
+
   padding: 0px;
- 
->>>>>>> 556fdbafd1db60e59c41aabf72ca5fd4088ff133
 }
 
 .name-use {
@@ -452,9 +417,6 @@ html.is-animating .transition-fade {
   background: rgb(240, 240, 240);
 }
 
-
-
-
 .personalSection {
   display: flex;
   flex-direction: column;
@@ -515,7 +477,6 @@ html.is-animating .transition-fade {
   letter-spacing: 2px;
 }
 
-
 .eachRoutine * {
   padding: 3px;
   color: #f32b11;
@@ -549,7 +510,6 @@ html.is-animating .transition-fade {
   padding-right: 5%;
 }
 
-
 .add-btn {
   width: 55%;
   margin-top: 1.5rem;
@@ -557,7 +517,6 @@ html.is-animating .transition-fade {
   height: 2.5rem;
   border: 1px solid #f32b11;
 }
-
 
 #routineName {
   width: 150%;
@@ -568,12 +527,10 @@ html.is-animating .transition-fade {
   color: #f32b11;
 }
 
-
 #personal-edit {
   border: 1px solid #f32b11;
   margin-top: 1.5rem;
 }
-
 
 .images-profile p {
   color: #f32b11;
@@ -611,7 +568,6 @@ html.is-animating .transition-fade {
 }
 
 /* Profile End */
-
 
 .box {
   position: relative;
@@ -708,10 +664,6 @@ html.is-animating .transition-fade {
   z-index: -1;
 }
 
-.titleAbout {
-  
-}
-
 /* -------EXERCCISE CARD CONTAINERS */
 
 .routineHeader {
@@ -730,12 +682,12 @@ html.is-animating .transition-fade {
 
 .exercise-card {
   margin-top: 20px;
-<<<<<<< HEAD
+
   /* margin-left: %; */
   width: 300px;
   margin-left: 3%;
   width: 250px;
->>>>>>> origin
+
   min-height: 700px;
   border: 2px solid #fd978a;
   margin: auto 5px;
@@ -822,25 +774,19 @@ html.is-animating .transition-fade {
   width: 31%;
   height: 500px;
   /* border-radius: 5%; */
-  background-image: url('/resources/div2.jpg');
+  background-image: url("/resources/div2.jpg");
 }
-.intro-card *{
+.intro-card * {
   background: none;
   color: #333333;
-
-<<<<<<< HEAD
 }
-.intro-card-content{
-=======
 
 .intro-card-content {
-
->>>>>>> origin
   justify-content: space-around;
   margin: 2% 2% 2% 2%;
 }
 
-.instruction-image{
+.instruction-image {
   width: 220px;
 }
 
@@ -871,25 +817,20 @@ html.is-animating .transition-fade {
   font-size: 1rem;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin
-.intro-card *{
+.intro-card * {
   font-family: Raleway;
 }
-.instructions-main{
+.instructions-main {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 2 em;
 }
 
-.top{
+.top {
   min-height: 95vh;
   width: 95%;
   border-bottom: 2px solid #fd978a;
-  ;
 }
 
 .bottom {
@@ -921,11 +862,6 @@ html.is-animating .transition-fade {
   width: 50%;
   margin: 50px auto;
   text-align: center;
-
-<<<<<<< HEAD
-=======
-
->>>>>>> origin
 }
 .inputsPhoto * {
   margin: 10px;
@@ -982,11 +918,46 @@ html.is-animating .transition-fade {
   }
 }
 
-.each-ex{
-<<<<<<< HEAD
-=======
-
->>>>>>> origin
+.each-ex {
   display: flex;
   flex-direction: row;
+}
+
+.gym-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.gym-btn {
+  width: 12%;
+  height: 3.5rem;
+  width: 12.5%;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: 2px solid #cfcfcf;
+  margin-bottom: 4rem;
+}
+
+.gym-btn:hover {
+  background: #fd1d1d;
+  color: rgb(223, 219, 219);
+  width: 15%;
+  height: 4rem;
+}
+
+.bottom-test{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
 }

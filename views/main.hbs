@@ -7,7 +7,8 @@
                         <img class="instruction-image" src="/resources/tress.png" alt="">
                         <div>
                             <h1>TAKE</h1>
-                            <h5 class="instructions">and upload a picture of elements you find in your house</h5>
+                            <h5 class="instructions">and upload a picture of elements you find in your house<br>(and can
+                                potentially excercise with)</h5>
                         </div>
                     </div>
                 </div>
@@ -15,7 +16,8 @@
             <div class="intro-card">
                 <div class="intro-card-content">
                     <div class="intro-card-main">
-                        <img class="instruction-image" src="/resources/dos.png" alt="">
+
+                        <img class="instruction-image" src="/resources/intr2.png" alt="">
                         <div>
                             <h1>SELECT</h1>
                             <h5 class="instructions">a type of exercise you feel like doing</h5>
@@ -54,29 +56,31 @@
 
     {{#if isUserLoggedIn}}
     <section class="bottom" id="bottom">
-        <h1 class="title-features1">Upload a photo !</h1>
-        <div class="inputsPhoto">
-            <input type="file" id="img" name="photo" size="60" placeholder="">
-        </div>
-        <h1 class="title-features2">Choose a type of Exercise</h1>
-        <div class="inputsEx">
-            <label for="type-select"></label>
-            <select name="exercises" id="excercise-select">
-                <option value="">--Please choose an option--</option>
-                <option value="Cardio">Cardio</option>
-                <option value="Legs">Legs</option>
-                <option value="Arms">Arms</option>
-                <option value="Core">Core</option>
+        <div class="bottom-cont">
+            <div class="inputsPhoto">
+                <h1>Upload a photo !</h1>
+                <input type="file" id="img" name="photo" placeholder="">
 
-            </select>
-        </div>
-
-        {{/if}}
-        <div class="each-ex">
-
-        </div>
+            </div>
+            <div class="inputsEx">
+                <h1>Choose a type of Exercise</h1>
+                <label for="type-select"></label>
+                <select name="exercises" id="excercise-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Legs">Legs</option>
+                    <option value="Arms">Arms</option>
+                </select>
+            </div>
+            <div class="allexers">
+            </div>
+            {{/if}}
+            <div class="each-ex">
+            </div>
     </section>
 
+
+    </section>
 </main>
 <script>
     function myFunction() {
@@ -85,7 +89,6 @@
     }
 </script>
 <!-- p5 libraries -->
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
 <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>

@@ -1,4 +1,4 @@
-excesAIze
+excersAIze
 
 Description
 Lazy days at home are officially over. ExcersAIze is a project based on an Artificial Intelligence algorithm which recognizes objects within an image input. The idea is for the user to upload a picture, and based on the recognition of the algorythm, get different excercise routines. The user will also be able to save said routines and mix them together to create new ones, as-well as sharing them with other users!

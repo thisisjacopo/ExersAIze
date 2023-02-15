@@ -83,8 +83,6 @@ const handleSubmit = async (filteredResult) => {
             <h5>${e.type}</h5>
             <p>${e.description}</p>
         </div>
-
-
         </div>
 `);
     const exContainer = document.querySelector(".each-ex");

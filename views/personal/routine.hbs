@@ -2,7 +2,6 @@
   <section class="personalSection">
     <header class="routineHeader" id="routineHeader">
       <h1 class="username-exercise">{{routine.name}}</h1>
-
     </header>
     <div class="allExerciseCards" data-routine='{{routine._id}}'>
 
@@ -27,6 +26,10 @@
             <p>{{this.description}}</p>
           </div>
         </div>
+      </div>
+      {{else}}
+    <div class="doesntContainer">
+        <p id="centered">This routine doesn't have ExercAIses yet!</p>
       </div>
       {{/each}}
     </div>

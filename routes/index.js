@@ -11,6 +11,7 @@ router.get("/main", (req, res, next) => {
   res.render("main");
 });
 
+
 router.get("/about", (req, res, next) => {
   res.render("about");
 });

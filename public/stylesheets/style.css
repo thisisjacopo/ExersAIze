@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
@@ -7,7 +6,6 @@
 html,
 body {
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap");
-
   scroll-behavior: smooth;
 }
 
@@ -29,30 +27,45 @@ body {
   height: 5%;
 }
 
+/*navbar FALTA MOBILE FIRST*/
+
 .menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   /* transform: rotate(180deg); */
-  height: 5rem;
+  height: 4rem;
   margin: 0 auto;
-  padding-right: 30px;
+  padding-right: 40px;
   z-index: 3 !important;
+  border-bottom: #ff5100 1px solid;
 }
 
 li a {
   /* transform: rotate(180deg); */
   font-family: Fira Code;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #f32b11;
   font-weight: bold;
   letter-spacing: 4px;
-  margin: 2rem;
+  margin: 1.5rem;
   background-color: transparent;
   text-align: center;
   width: 15%;
   transition: width 0.8s ease 0.3s, font-size 0.8s ease 0.3s;
 }
+
+
+.ruido {
+ 
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  max-height: 100vh;
+}
+
 
 li {
   z-index: 3;
@@ -77,8 +90,9 @@ ul li a:hover {
 
 .logoHome {
   justify-self: flex-start;
-  font-family: Manrope;
-  color: #f87117;
+  font-family: Raleway;
+  font-size: 2em;
+  color: #f32b11;
 }
 
 /* home */
@@ -100,6 +114,7 @@ ul li a:hover {
   z-index: 21;
 }
 
+
 .threeDp2 {
   font-weight: 900;
   font-family: Raleway;
@@ -117,11 +132,11 @@ ul li a:hover {
   background: none;
 }
 
+
 .ai {
   color: #928e8c;
   background: none;
 }
-
 p {
   position: relative;
   margin-top: 10px;
@@ -145,7 +160,6 @@ p {
   justify-content: space-around;
 
   padding: 0 35px;
-
   padding: 0px;
 }
 
@@ -176,74 +190,6 @@ p {
   width: 10%;
 }
 
-/*gallery*/
-
-.container-title-p-connect {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-flow: row;
-}
-
-.text-gallery {
-  margin-top: 70%;
-  margin-left: 15%;
-  font-family: Manrope;
-  font-weight: 400;
-  font-size: 1.1em;
-  width: 80%;
-  text-align: right;
-}
-
-.square {
-  height: 500px;
-  width: 400px;
-  border: 3px solid black;
-  margin-top: 7%;
-  margin-left: -10%;
-}
-
-.title-archive {
-  color: black;
-  margin-top: 17%;
-  margin-left: 15%;
-  font-size: 6em;
-  font-family: Manrope;
-  transition: 1s;
-}
-
-.orangeBackground {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-  height: 100vh;
-}
-
-.imagesInGallery {
-  width: 290px;
-  margin: 10px;
-  padding: 25px 25px 65px;
-  transition: 2s;
-  box-shadow: 1px 1px 10px rgb(240, 235, 227);
-}
-
-.imagesInGallery:hover {
-  width: 310px;
-  background: rgb(240, 235, 235);
-}
-
-.title-archive:hover {
-  color: purple;
-}
-
-.container-archive {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 a:link {
   text-decoration: none;
 }
@@ -262,7 +208,7 @@ li {
   transform: scale(0);
   transform: skewX(-45);
   transform-origin: left;
-  background: linear-gradient(302deg, #313f3c, #0d1815, #938686, #38435e);
+  background: linear-gradient(302deg, #ce853b, #b92b00, #e04406, #333333);
   background-size: 800% 800%;
 
   -webkit-animation: grad 3s ease infinite;
@@ -462,19 +408,9 @@ html.is-animating .transition-fade {
   margin-top: 5rem;
 }
 
-.eachRoutine {
-  margin-top: 3rem;
+.doesntContainer {
   display: flex;
-  flex-direction: row;
-  width: 25%;
   justify-content: center;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  border-bottom: 1px solid #f32b11;
-  color: #f32b11;
-  align-items: flex-start;
-  font-size: 1rem;
-  letter-spacing: 2px;
 }
 
 .eachRoutine * {
@@ -497,8 +433,8 @@ html.is-animating .transition-fade {
 }
 
 #add-routine-btn {
-  width: 25%;
-  height: 4rem;
+  width: 31%;
+  height: 3rem;
   margin-bottom: 3rem;
   cursor: pointer;
   border: 1px solid #f32b11;
@@ -513,14 +449,14 @@ html.is-animating .transition-fade {
 .add-btn {
   width: 55%;
   margin-top: 1.5rem;
-  margin-left: 50%;
+  margin-left: 30%;
   height: 2.5rem;
   border: 1px solid #f32b11;
 }
 
 #routineName {
-  width: 150%;
-  height: 3rem;
+  width: 120%;
+  height: 2rem;
   border: none;
   border-bottom: 1px solid #f32b11;
   float: none;
@@ -535,6 +471,7 @@ html.is-animating .transition-fade {
 .images-profile p {
   color: #f32b11;
 }
+
 /* edit profile */
 
 .personalHeader2 {
@@ -547,9 +484,10 @@ html.is-animating .transition-fade {
   margin-top: 5rem;
   margin-left: 30%;
   border-left: #f32b11 2px solid;
-  border-right: #f32b11 2px solid;
+  border-right: #f3d31d 2px solid;
   align-self: auto;
 }
+
 .personalHeader2 button {
   color: #f32b11;
   margin-top: 1rem;
@@ -558,6 +496,11 @@ html.is-animating .transition-fade {
 .image-input-btn {
   color: #f32b11;
   height: 2rem;
+  width: 38%;
+}
+
+#routineName {
+  background: none;
 }
 
 .personalHeader2 * {
@@ -636,7 +579,7 @@ html.is-animating .transition-fade {
 /* about */
 
 .about-text {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-flow: column;
   text-align: center;
@@ -644,13 +587,18 @@ html.is-animating .transition-fade {
 }
 
 .about-text p {
-  font-family: Manrope;
+  font-family: Raleway;
   line-height: 1.6em;
   letter-spacing: 0.6px;
-  font-size: 15px;
+  font-size: 1.2em;
   text-align: center;
-  color: white;
+  color: rgb(241, 194, 40);
   margin-top: 20px;
+}
+
+.titleAbout {
+  margin-top: 20%;
+  font-size: 3em;
 }
 
 .about-text p a {
@@ -675,9 +623,9 @@ html.is-animating .transition-fade {
 }
 
 .routineHeader h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 5rem;
-  color: #333333;
+  color: #f93b20;
 }
 
 .exercise-card {
@@ -695,20 +643,23 @@ html.is-animating .transition-fade {
 }
 
 .exercise-card h5 {
-  font-size: 1rem;
-  margin-top: 20px;
+  font-size: 1.1rem;
+  margin-top: 11px;
   letter-spacing: 1.5px;
-  color: #fd978a;
+  color: white;
 }
+
 .exercise-card h1 {
-  color: #fd978a;
+  color: #ee8054;
   font-size: 2rem;
   letter-spacing: 3px;
 }
 
 .exercise-card p {
-  color: #fd978a;
-  font-size: 1rem;
+  color: #f9faf4;
+  font-size: 0.9rem;
+  line-height: 1.3em;
+  padding-top: 10px;
 }
 
 .exercise-card-content {
@@ -723,26 +674,29 @@ html.is-animating .transition-fade {
 }
 
 .ex-move-btn {
-  background-color: rgb(233, 221, 59);
+  background: none;
   float: left;
   margin-left: 1rem;
-  width: 6rem;
+  width: 200px;
   height: 1.5rem;
   border: none;
+  margin-top: 5%;
+  color: #333333;
 }
 
 .ex-move-btn:hover {
-  color: rgb(233, 221, 59);
-  background-color: #333333;
+  color: #f32b11 background-color: #333333;
 }
 
 .ex-delete-btn {
-  background-color: rgb(175, 29, 29);
+  background-color: #f32b11;
   float: right;
   margin-right: 1rem;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
   border: none;
+  margin-top: 5%;
+  border-radius: 20%;
 }
 
 .ex-delete-btn:hover {
@@ -756,7 +710,7 @@ html.is-animating .transition-fade {
   justify-content: space-around;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .ex-card-main h2 {
@@ -806,6 +760,7 @@ html.is-animating .transition-fade {
   color: #333333;
   font-weight: 500;
 }
+
 .intro-card h1 {
   color: #333333;
   font-size: 2rem;
@@ -830,6 +785,7 @@ html.is-animating .transition-fade {
 .top {
   min-height: 95vh;
   width: 95%;
+
   border-bottom: 2px solid #fd978a;
 }
 
@@ -837,7 +793,9 @@ html.is-animating .transition-fade {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-image: url('/resources/fondo.png');
 }
+
 
 .cards-container {
   display: flex;
@@ -846,7 +804,6 @@ html.is-animating .transition-fade {
 .getReady {
   display: flex;
   justify-content: center;
-
   margin: auto auto;
 }
 
@@ -859,10 +816,11 @@ html.is-animating .transition-fade {
 .inputsEx {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 33%;
   margin: 50px auto;
   text-align: center;
 }
+
 .inputsPhoto * {
   margin: 10px;
   padding: 10px;
